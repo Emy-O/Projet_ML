@@ -1,6 +1,16 @@
-# Projet_ML
+# # Predicting the Foreign exchange market shocks according governing council date 
 
-# TO DO :
+Communications from central banks, in particular the European Central Bank (ECB), have a significant influence on market expectations and economic trajectories. With this in mind, this study seeks to determine whether the dates of general council meeting, governing council meetings, and press conferences on monetary policies have an impact on the European market, in particular on the STOXX 50, which is a stock market index representing 50 major stocks in the eurozone. This approach combines the temporal information of key events with sentiment analysis derived from press conferences, utilizing the Loughran McDonald dictionary
 
-- respecter la structure du rendu 
-- faire un indicateurs d'analyse des sentiments des press conferences
+One of the limitations of this study is that financial markets operate in a highly dynamic environment, reacting not only to central bank communications, but also to a range of external factors. Another notable limitation stems from the rapid return to normality observed after the ECB's press conferences. About an hour after the conclusion of the press conference, futures prices on the market show a complete assimilation of the news. This rapid return to normal underlines a time constraint in the scope of the study, indicating that the immediate impact of the ECB announcements on market expectations may be short-lived. However, we did not have access to Eurostoxx 50 data at a small enough time interval over a sufficiently large sample to model and understand impacts within the same day. To address this, we decided to focus on the daily percentage variation of the STOXX 50.
+
+This study will take into account the dates of ECB meetings and the sentiments delivered during the press conferences, which are webscrapped from ECB website. Then, we will work on the daily percentage variation of the STOXX 50 index, trying to catch the impact of those meetings on this daily variation. Then, the goal is to predict this variation in the future.
+
+To summary this project, firstly, we attempted to highlight the impact of the ECB's governing council, general council, and press conferences on the Eurostoxx. We observed that press conferences had the most significant impact on it. Therefore, we tried to use press conference dates to predict the Eurostoxx in the long and short term. We saw see, that in the long term way, we did not sucess to predict the variation of the STOXX 50 because of the volatility of the market. We saw that daily rolling forecasting could be the solution to fight the volaitly problem. Nevertheless, after modeling, we did not observe a significant improvement in predictions after incorporating press conference dates. A second approach involved incorporating sentiment analysis using the Loughran McDonald dictionary, but unfortunately, this did not yield conclusive results either.
+
+The significance of communication in monetary policy has gained prominence, acknowledging that managing market expectations is equally, if not more, crucial than determining the actual overnight policy rate. Communication stands as a primary avenue through which central bankers can influence market perceptions regarding their future actions. This insight is supported by the event-study analysis conducted by Gürkaynak et al. (2005), demonstrating that on Federal Reserve decision days, the statement exerts an impact on markets beyond the effect of contemporaneous policy rate changes.
+
+Furthermore, our methodological choice is based on the belief that the impacts of ECB announcements may unfold progressively and endure, thus requiring a more extended time frame to fully capture them. Thus, unlike more common approaches likes Carlo Rosa and Giovanni Vergac (2008)  did, that examine intraday variations before, during, and after meetings, our model seeks to explore effects over an extended period.
+
+(https://www.ijcb.org/journal/ijcb08q2a5.pdf)
+(https://www.sciencedirect.com/science/article/pii/S0176268022000428?fr=RR-2&ref=pdf_download&rr=84f217cace36f858)
