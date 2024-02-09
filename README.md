@@ -1,4 +1,4 @@
-# # Predicting the Foreign exchange market shocks according governing council date 
+## Predicting the Foreign exchange market shocks according governing council date 
 
 Communications from central banks, in particular the European Central Bank (ECB), have a significant influence on market expectations and economic trajectories. With this in mind, this study seeks to determine whether the dates of general council meeting, governing council meetings, and press conferences on monetary policies have an impact on the European market, in particular on the STOXX 50, which is a stock market index representing 50 major stocks in the eurozone. This approach combines the temporal information of key events with sentiment analysis derived from press conferences, utilizing the Loughran McDonald dictionary
 
